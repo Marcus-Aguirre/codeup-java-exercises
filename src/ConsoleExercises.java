@@ -4,21 +4,25 @@ public class ConsoleExercises {
 
     public static void main(String[] args) {
 
+
         double pi = 3.14159;
+
+        System.out.print("Enter an integer number: ");
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter an integer number: ");
 
         int userInput = scanner.nextInt();
 
         int fiveLess = userInput - 5;
+
 
         System.out.format("The number %s is five numbers less than the number you chose.\n", fiveLess);
 
         System.out.format("The value of pi is approximately %s!\n", pi);
 
         System.out.print("Enter the length and width of the Codeup Classroom: ");
+
 
 
         Scanner one = new Scanner(System.in);
