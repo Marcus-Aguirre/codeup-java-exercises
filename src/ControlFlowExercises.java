@@ -74,14 +74,17 @@ public class ControlFlowExercises {
 
         System.out.println("\nHere is your table!!\n");
 
-        System.out.println("   number   |   squared   |   cubed   ");
-        System.out.println("--------------------------------------");
+        System.out.println(" number| squared| cubed ");
+        System.out.println("---------------------------");
 
         int numberUp = 0;
 
         for(int i = numberTo; i > 0; i--){
             numberUp++;
-            System.out.println("     " + (numberUp)  + "      |       " + (numberUp * numberUp) + "     |    " + (numberUp * numberUp * numberUp) + "     ");
+            int squared = numberUp * numberUp;
+            int cubed = numberUp * numberUp * numberUp;
+
+            System.out.format("%-6d | %-6d | %-6d\n", numberUp, squared, cubed);
         }
 
 
