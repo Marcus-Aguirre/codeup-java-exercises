@@ -9,7 +9,7 @@ public class Bob {
         System.out.println("Hi, Im Bob.");
 
 
-        //////// INFINITE LOOP TO KEEP CONVERSING ////////
+        //////// ∞ LOOP TO KEEP CONVERSING ////////
 
         do{
 
@@ -36,6 +36,7 @@ public class Bob {
             }
 
         }while(true);
+
 
     }
 }
