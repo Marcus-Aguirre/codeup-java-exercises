@@ -9,8 +9,8 @@ public class StringExercise {
 
 
 
-//        We don't need no education
-//        We don't need no thought control
+/*        We don't need no education
+        We don't need no thought control*/
 
         String messageOne = "We don't need no eduction \nWe don't need no thought control";
 
@@ -44,8 +44,8 @@ public class StringExercise {
 
 
 
-//        I can do backslashes \, double backslashes \\,
-//        and the amazing triple backslash \\\!
+/*        I can do backslashes \, double backslashes \\,
+        and the amazing triple backslash \\\!*/
 
         String messageFour = "I can do backslashes \\, double backslashes \\\\, \nand the amazing triple backslash \\\\\\!";
 
