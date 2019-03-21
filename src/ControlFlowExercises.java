@@ -80,11 +80,48 @@ public class ControlFlowExercises {
         int numberUp = 0;
 
         for(int i = numberTo; i > 0; i--){
+
             numberUp++;
+
             int squared = numberUp * numberUp;
+
             int cubed = numberUp * numberUp * numberUp;
 
             System.out.format("%-6d | %-6d | %-6d\n", numberUp, squared, cubed);
+
+            /* if (numberTo == numberUp) {
+
+                Scanner toContinue = new Scanner(System.in);
+
+                System.out.println("Do you want to continue?");
+
+                String userContinue = toContinue.next();
+
+
+                if (userContinue.equals("yes")) {
+
+                    numberUp = 0;
+
+                    System.out.print("Choose a number: ");
+
+                    numberTo = dgo.nextInt();
+
+                    i = numberTo;
+
+                    System.out.println("\nHere is your table!!\n");
+
+                    System.out.println(" number| squared| cubed ");
+                    System.out.println("---------------------------");
+
+
+
+                    continue;
+
+                } else {
+
+                    break;
+                }*/
+
         }
 
 
@@ -120,7 +157,6 @@ public class ControlFlowExercises {
             System.out.println("The score is an \"F\".");
 
         }
-
 
 
 
