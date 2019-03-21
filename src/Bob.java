@@ -8,6 +8,9 @@ public class Bob {
 
         System.out.println("Hi, Im Bob.");
 
+
+        //////// INFINITE LOOP TO KEEP CONVERSING ////////
+
         do{
 
             System.out.println("Ask me anything: ");
