@@ -10,7 +10,6 @@ public class Bob {
 
 
         //////// ∞ LOOP TO KEEP CONVERSING ////////
-
         do{
 
             System.out.println("Ask me anything: ");

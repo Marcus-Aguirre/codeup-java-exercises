@@ -32,7 +32,6 @@ public class MethodsExercises {
 
 
 
-
     public static void main (String[] args){
 
         System.out.println(" 5 + 10 = " + addition(5,10));
