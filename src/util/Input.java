@@ -1,3 +1,5 @@
+package util;
+
 import java.util.Scanner;
 
 public class Input {
@@ -12,7 +14,6 @@ public class Input {
     }
 
 
-
     public String getString(){
 
         System.out.println("Please enter a string: ");
@@ -24,7 +25,6 @@ public class Input {
     }
 
 
-
     public boolean yesNo(){
 
         System.out.println("Please enter yes or no: ");
@@ -32,10 +32,10 @@ public class Input {
         String getStringInput = instanceScanner.next();
 
         return getStringInput.equalsIgnoreCase("yes")
+
                 || getStringInput.equalsIgnoreCase("Y");
 
     }
-
 
 
     public int getInt(int min, int max){
@@ -57,7 +57,6 @@ public class Input {
     }
 
 
-
     public int getInt(){
 
         System.out.println("Please enter a random number: ");
@@ -67,7 +66,6 @@ public class Input {
         return getRandomIntInput;
 
     }
-
 
 
     public double getDouble(double min, double max){
@@ -89,7 +87,6 @@ public class Input {
     }
 
 
-
     public double getDouble(){
 
         System.out.println("Please enter a random number with a floating point: ");
@@ -101,32 +98,9 @@ public class Input {
     }
 
 
-
     public static void main(String[] args){
-
-        Input today = new Input();
-
-        System.out.println(today.getString());
-
-        System.out.println(" Your number is: " + today.getInt(5, 25));
-
-        System.out.println(today.yesNo());
-
-        System.out.println(today.getInt());
-
-        System.out.println(today.getDouble(5.5, 25.5));
-
-        System.out.println(today.getDouble());
-
-
 
 
 
     }
-
-
-
-
-
-
 }
