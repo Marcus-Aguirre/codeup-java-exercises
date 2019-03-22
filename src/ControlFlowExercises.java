@@ -89,7 +89,7 @@ public class ControlFlowExercises {
 
             System.out.format("%-6d | %-6d | %-6d\n", numberUp, squared, cubed);
 
-            /* if (numberTo == numberUp) {
+             /*if (numberTo == numberUp) {
 
                 Scanner toContinue = new Scanner(System.in);
 
