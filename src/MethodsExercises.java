@@ -66,35 +66,74 @@ public class MethodsExercises {
 
     public static void factorial(int num){
 
-        for(int i = 1; i <= num; i++){
+        ////// BOOLEAN USED FOR USER CONTINUE LATER ///////
 
-            long factorSolution = 1;
+        boolean userContinue = true;
 
-            String message = "" + i + "! = ";
+        do {
+
+            //////// OUTER FOR LOOP //////
+
+            for(int i = 1; i <= num; i++){
+
+                long factorSolution = 1;
+
+                String message = "" + i + "! = ";
 
 
-            for(int x = 1; x <= i; x++){
+                ////// INNER FOR LOOP //////////
 
-                if(i == x){
+                for(int x = 1; x <= i; x++){
+
+                    if(i == x){
+
+                        factorSolution *= x;
+
+                        message += x;
+
+                        continue;
+                    }
 
                     factorSolution *= x;
 
-                    message += x;
+                    message += x + " x ";
 
-                    continue;
                 }
 
-                factorSolution *= x;
+                message += " = " + factorSolution;
 
-                message += x + " x ";
+                System.out.println(message);
 
             }
 
-            message += " = " + factorSolution;
+            /////////// USER CONTINUE CONDITIONAL ////////
 
-            System.out.println(message);
+            System.out.println("Do you want to continue? (y/n)");
 
-        }
+            Scanner userCon = new Scanner(System.in);
+
+            String userCont = userCon.next();
+
+            /////////// IF/ELSE FOR USER CONTINUE ////////
+
+            if(userCont.equals("y")){
+
+                System.out.println("Choose a new number to factorial: ");
+
+                int newUserInt = userCon.nextInt();
+
+                num = newUserInt;
+
+                userContinue = true;
+
+            }else{
+
+                userContinue = false;
+            }
+
+            //////// USER CONTINUE BEGINS AT FALSE, WILL ONLY RUN AGAIN IF USER ENTERS "y" //////
+
+        }while(userContinue);
     }
 
 
