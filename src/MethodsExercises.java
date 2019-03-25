@@ -3,33 +3,23 @@ import java.util.Scanner;
 public class MethodsExercises {
 
     public static int addition (int a, int b){
-
         return a + b;
-
     }
 
     public static int subtraction (int a, int b){
-
         return a - b;
-
     }
 
     public static int multiplication (int a, int b){
-
         return a * b;
-
     }
 
     public static int division (int a, int b){
-
         return a / b;
-
     }
 
     public static int modulus (int a, int b){
-
         return a % b;
-
     }
 
     public static int getInteger(int min, int max){
@@ -138,10 +128,9 @@ public class MethodsExercises {
 
 
 
-
     public static void main (String[] args){
 
-        System.out.println(" 5 + 10 = " + addition(5,10));
+        /*System.out.println(" 5 + 10 = " + addition(5,10));
 
         System.out.println(" 10 - 5 = " + subtraction(10,5));
 
@@ -151,9 +140,18 @@ public class MethodsExercises {
 
         System.out.println(" 10 % 5 = " + modulus(10,5));
 
-       int newGuess = getInteger(5, 15);
+       int newGuess = getInteger(5, 15);  */
 
        factorial(5);
+
+       int x = getInteger(5, 15);
+
+        System.out.println(x);
+
+       /* String cee = "c";
+        char see = 'c';
+
+        System.out.println(cee.equals(cee));*/
 
     }
 
