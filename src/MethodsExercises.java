@@ -130,7 +130,7 @@ public class MethodsExercises {
 
     public static void main (String[] args){
 
-        /*System.out.println(" 5 + 10 = " + addition(5,10));
+        System.out.println(" 5 + 10 = " + addition(5,10));
 
         System.out.println(" 10 - 5 = " + subtraction(10,5));
 
@@ -140,8 +140,8 @@ public class MethodsExercises {
 
         System.out.println(" 10 % 5 = " + modulus(10,5));
 
-       int newGuess = getInteger(5, 15);  */
-
+       int newGuess = getInteger(5, 15);
+       
        factorial(5);
 
        int x = getInteger(5, 15);
