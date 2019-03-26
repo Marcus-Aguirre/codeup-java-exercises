@@ -7,10 +7,12 @@ import java.util.Scanner;
 public class HighLow {
 
 
+    ////////////// GAME RUNNING METHOD //////////////
     public static void gameFunctions(int random){
 
         int count = 0;
 
+        ////////////// INTRODUCTION //////////////
         System.out.println("  WORLD FAMOUS JAVA\nHIGH/LOW GUESSING GAME");
         System.out.println("-----------------------");
         System.out.println();
@@ -21,8 +23,13 @@ public class HighLow {
 
         int userGuess = scanner.nextInt();
 
+
+        //////// BOOLEAN TO CONTINUE GUESSING LOOP ////////
         boolean correctGuess = false;
 
+
+
+        ////////// DO/WHILE LOOP WHILE GUESSING ///////////
         do{
 
             if(userGuess > random){
@@ -63,6 +70,7 @@ public class HighLow {
 
             }else if(userGuess == random){
 
+                ////////////// INITIAL OUTRO //////////////
                 count++;
 
                 System.out.format("\nYour CORRECT!! The number was %s", random);
@@ -74,6 +82,8 @@ public class HighLow {
             }
 
         }while(!correctGuess);
+
+        ////////////// USER CONTINUE SECTION //////////////
 
         System.out.println("\n------------------------------------");
 
@@ -89,9 +99,11 @@ public class HighLow {
 
             System.out.println("\n\n\n");
 
-            gameFunctions(innerRandNum );
+            gameFunctions(innerRandNum);
 
         }else{
+
+            ////////////// FINAL OUTRO //////////////
 
             System.out.println("\nWe hope you enjoyed your stay.");
             System.out.println("GoodBye");
@@ -103,6 +115,7 @@ public class HighLow {
 
 
 
+    ////////////// MAIN METHOD RUNNING GAME //////////////
 
     public static void main(String[] args) {
 
