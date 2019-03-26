@@ -2,8 +2,32 @@ import java.util.Random;
 
 public class ServerNameGenerator {
 
-   private static String[] nouns = {"Harmonica", "Sister", "Stranger", "Turret", "Tank", "Father", "Cilantro", "Universe", "Master", "Rookie"};
-   private static String[] adjectives = {"Voiceless", "Discreet", "Physical", "Cheap", "Venomous", "Talented", "Ruthless", "Sullen", "Fragile", "Future"};
+   private static String[] nouns = {
+           "Harmonica",
+           "Sister",
+           "Stranger",
+           "Turret",
+           "Tank",
+           "Father",
+           "Cilantro",
+           "Universe",
+           "Master",
+           "Rookie"
+   };
+
+   private static String[] adjectives = {
+           "Voiceless",
+           "Discreet",
+           "Physical",
+           "Cheap",
+           "Venomous",
+           "Talented",
+           "Ruthless",
+           "Sullen",
+           "Fragile",
+           "Future"
+   };
+
    private static Random rand = new Random();
 
 
@@ -18,10 +42,11 @@ public class ServerNameGenerator {
 
     public static void main(String[] args) {
 
-        System.out.println("Your new server name is: " + ServerNameGenerator.newName());
-        System.out.println("Your new server name is: " + ServerNameGenerator.newName());
-        System.out.println("Your new server name is: " + ServerNameGenerator.newName());
-        System.out.println("Your new server name is: " + ServerNameGenerator.newName());
+        System.out.println("Your new server name is: \n" + ServerNameGenerator.newName() + "\n");
+        System.out.println("Your new server name is: \n" + ServerNameGenerator.newName() + "\n");
+        System.out.println("Your new server name is: \n" + ServerNameGenerator.newName() + "\n");
+        System.out.println("Your new server name is: \n" + ServerNameGenerator.newName() + "\n");
+        System.out.println("Your new server name is: \n" + ServerNameGenerator.newName() + "\n");
 
 
     }
