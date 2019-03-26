@@ -18,7 +18,7 @@ public class Input {
 
         String getStringInput = instanceScanner.nextLine();
 
-        return "You entered: " + getStringInput;
+        return getStringInput;
 
     }
 

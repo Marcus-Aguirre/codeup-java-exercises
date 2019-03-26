@@ -1,4 +1,6 @@
-package Shapes;
+package shapes;
+
+import util.Input;
 
 public class Circle {
 
