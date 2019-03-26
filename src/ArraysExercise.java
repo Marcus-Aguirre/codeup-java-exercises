@@ -2,17 +2,15 @@ import java.util.Arrays;
 
 public class ArraysExercise {
 
-    ///////// CANT FIGURE OUT NOW ///// WILL TRY AGAIN LATER /////////
 
-    /*public static Person[] addPerson(Person[] array, Person adding){
+    public static Person[] addPerson(Person[] array, Person adding){
         Person[] newArray = new Person[array.length + 1];
 
-        for(int i = 0; i < array.length; i++){
-
-        }
+        newArray = Arrays.copyOf(array, array.length +1);
+        newArray[array.length] = adding;
 
         return newArray;
-    }*/
+    }
 
 
 
@@ -27,6 +25,8 @@ public class ArraysExercise {
         Person Marcus = new Person("Marcus");
         Person SecondMarcus = new Person("Second Marcus");
         Person ThirdMarcus = new Person("Third Marcus");
+        Person FourthMarcus = new Person("Fourth Marcus");
+
 
         Person[] people = {Marcus, SecondMarcus, ThirdMarcus};
 
@@ -35,6 +35,13 @@ public class ArraysExercise {
             System.out.println(people[i].getName());
         }
 
+        System.out.println();
+
+        Person[] newArray = ArraysExercise.addPerson(people, FourthMarcus);
+
+        for(int i = 0; i < newArray.length; i++){
+            System.out.println(newArray[i].getName());
+        }
 
 
 

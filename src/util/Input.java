@@ -8,9 +8,7 @@ public class Input {
 
 
     public Input (){
-
-       instanceScanner = new Scanner(System.in);
-
+        instanceScanner = new Scanner(System.in);
     }
 
 
