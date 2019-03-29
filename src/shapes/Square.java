@@ -2,12 +2,8 @@ package shapes;
 
 public class Square extends Quadrilateral {
 
-    public void setWidth(){}
-    public void setLength(){}
-
-    public Square(int sides){
-        this.length = sides;
-        this.width = sides;
+    public Square (int length, int width){
+        super(length, width);
     }
 
     public void setWidth(int width){
@@ -16,32 +12,17 @@ public class Square extends Quadrilateral {
     }
 
     public void setLength(int length){
-        this.width = length;
         this.length = length;
+        this.width = length;
     }
 
-
-    public double getPerimeter() {
-        return 0;
+    public double getPerimeter(){
+        return this.length * 4;
     }
 
-    public double getArea() {
-
-        return this.width * this.length;
-    }
-
-    /* public Square(int sides){
-        this.length = sides;
-        this.width = sides;
-    }
-
-    public int getArea(){
-
+    public double getArea(){
         return this.length * this.length;
     }
 
-    public int getPerimeter(){
 
-        return this.length * 4;
-    }*/
 }
