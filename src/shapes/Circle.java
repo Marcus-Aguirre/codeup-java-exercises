@@ -2,6 +2,9 @@ package shapes;
 
 import util.Input;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Circle {
 
     private double radius;
@@ -33,6 +36,8 @@ public class Circle {
 
         System.out.println(square.getArea());
         System.out.println(square.getCircumference());
+
+
 
     }
 

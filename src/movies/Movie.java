@@ -1,7 +1,5 @@
 package movies;
 
-import util.Input;
-
 public class Movie {
 
     private String name;
