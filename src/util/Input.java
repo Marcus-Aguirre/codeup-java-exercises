@@ -15,9 +15,7 @@ public class Input {
     public String getString(){
 
         System.out.println("Please enter a string: ");
-
         String getStringInput = instanceScanner.nextLine();
-
         return getStringInput;
 
     }
@@ -26,9 +24,7 @@ public class Input {
     public boolean yesNo(){
 
         System.out.println("Please enter yes or no: ");
-
         String getStringInput = instanceScanner.next();
-
         return getStringInput.equalsIgnoreCase("yes")
 
                 || getStringInput.equalsIgnoreCase("Y");
