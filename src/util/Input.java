@@ -1,5 +1,6 @@
 package util;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Input {
@@ -52,14 +53,25 @@ public class Input {
 
 
     public int getInt(){
+            System.out.println("Please enter a random number: ");
 
-        System.out.println("Please enter a random number: ");
+            int getRandomIntInput = 0;
 
-        int getRandomIntInput = instanceScanner.nextInt();
+                String userInput = instanceScanner.next();
+
+            try {
+                getRandomIntInput = Integer.valueOf(userInput);
+
+            } catch (Exception e) {
+
+                getInt();
+
+            }
 
         return getRandomIntInput;
 
     }
+
 
 
     public double getDouble(double min, double max){
@@ -85,7 +97,19 @@ public class Input {
 
         System.out.println("Please enter a random number with a floating point: ");
 
-        double getRandomDoubleInput = instanceScanner.nextDouble();
+        double getRandomDoubleInput = 0.0;
+
+        String userInput = instanceScanner.next();
+
+        try {
+
+            getRandomDoubleInput = Double.valueOf(userInput);
+
+        }catch (Exception e){
+
+            getDouble();
+
+        }
 
         return getRandomDoubleInput;
 
@@ -94,6 +118,8 @@ public class Input {
 
     public static void main(String[] args){
 
+        Input in = new Input();
+        in.getDouble();
 
 
     }
